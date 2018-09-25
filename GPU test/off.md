@@ -1,12 +1,12 @@
 # GPU acceleration off
 
 ## PC info
-Xiaomi Mi Book Air 2018
-CPU i5-9250U
-GPU GTX MX 150, Pascal micro-architecture compute, capability version 6.1
+- Xiaomi Mi Book Air 2018
+- CPU i5-9250U
+- GPU GTX MX 150, Pascal micro-architecture compute, capability version 6.1
 
 ## Console log:
-'''
+```
 C:\Users\Craig\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\ensemble\weight_boosting.py:29: DeprecationWarning: numpy.core.umath_tests is an internal NumPy module and should not be imported. It will be removed in a future NumPy release.
   from numpy.core.umath_tests import inner1d
 E:\GitHub\History-Kaggle-Demo-Allstate-Claims\preprocess_GridSearch.py:74: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
@@ -36,5 +36,5 @@ Fitting 4 folds for each of 5 candidates, totalling 20 fits
 [Parallel(n_jobs=1)]: Done   4 out of   4 | elapsed: 35.6min remaining:    0.0s
 [CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x0000019C1C89C1E0>, seed=1234, subsample=0.78 
 [Cancelled]
-'''
-It takes too long that I manually canceled.
+```
+It took too long that I manually canceled.
