@@ -38,13 +38,12 @@ def logregobj(labels, preds):
 def log_mae(y,yhat):
     return mean_absolute_error(np.exp(y), np.exp(yhat))
 
-def search_model(train_x, train_y, est, param_grid, n_jobs, cv, refit=False):
+def search_model(train_x, train_y, est, param_grid, cv, refit=False):
     ##Grid Search for the best model
     model = GridSearchCV(estimator  = est,
                                      param_grid = param_grid,
                                      scoring    = log_mae_scorer,
                                      verbose    = 10,
-                                     n_jobs  = n_jobs,
                                      iid        = True,
                                      refit    = refit,
                                      cv      = cv)
@@ -130,8 +129,7 @@ param_grid = {'objective':[logregobj],
 
 model = search_model(train_x,
                      train_y,
-                     xgb.XGBRegressor(),
+                     xgb.XGBRegressor(tree_method='gpu_hist',n_estimators=10),
                      param_grid,
-                     n_jobs = 1,
                      cv = 4,
                      refit = True)
