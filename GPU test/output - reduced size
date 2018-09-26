@@ -1,0 +1,80 @@
+D:\GitHub\History-Kaggle-Demo-Allstate-Claims\preprocess_GridSearch.py:73: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=True'.
+
+To retain the current behavior and silence the warning, pass sort=False
+
+  full_data = pd.concat([df_train, df_test]).reset_index(drop=True)
+Full Data set created.
+Label enconding processes in 1.753314 seconds
+One-Hot encoding processes in 0.155584 seconds
+(20000, 980)
+Fitting 4 folds for each of 5 candidates, totalling 20 fits
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-1859.3373813320313, total=  47.4s
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:   47.8s remaining:    0.0s
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-1822.4852783593751, total=  46.3s
+[Parallel(n_jobs=1)]: Done   2 out of   2 | elapsed:  1.6min remaining:    0.0s
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-1790.7627318046875, total=  47.4s
+[Parallel(n_jobs=1)]: Done   3 out of   3 | elapsed:  2.4min remaining:    0.0s
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-1853.507730859375, total=  47.3s
+[Parallel(n_jobs=1)]: Done   4 out of   4 | elapsed:  3.2min remaining:    0.0s
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-4143.39272803125, total= 1.1min
+[Parallel(n_jobs=1)]: Done   5 out of   5 | elapsed:  4.3min remaining:    0.0s
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-4065.1366616093746, total= 1.1min
+[Parallel(n_jobs=1)]: Done   6 out of   6 | elapsed:  5.4min remaining:    0.0s
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-4430.31389853125, total= 1.1min
+[Parallel(n_jobs=1)]: Done   7 out of   7 | elapsed:  6.5min remaining:    0.0s
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-4350.5074396875, total= 1.1min
+[Parallel(n_jobs=1)]: Done   8 out of   8 | elapsed:  7.6min remaining:    0.0s
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-4812.080741101562, total= 1.1min
+[Parallel(n_jobs=1)]: Done   9 out of   9 | elapsed:  8.7min remaining:    0.0s
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-4056.2855718906244, total= 1.1min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-3992.507173171875, total= 1.1min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-3948.57756709375, total= 1.1min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-3538.666607734375, total= 1.2min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-4902.959944374999, total= 1.2min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-4368.678972875, total= 1.2min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-4208.6608347500005, total= 1.2min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-7979.219010546875, total= 1.3min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-5927.723337781251, total= 1.3min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-5837.771383843749, total= 1.3min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x000002343DA72EA0>, seed=1234, subsample=0.78, score=-4931.70888915625, total= 1.3min
+[Parallel(n_jobs=1)]: Done  20 out of  20 | elapsed: 22.3min finished
+params:
+
+[{'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.001, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x000002343DA72EA0>, 'seed': 1234, 'subsample': 0.78}, {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.01, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x000002343DA72EA0>, 'seed': 1234, 'subsample': 0.78}, {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.02, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x000002343DA72EA0>, 'seed': 1234, 'subsample': 0.78}, {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.05, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x000002343DA72EA0>, 'seed': 1234, 'subsample': 0.78}, {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.1, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x000002343DA72EA0>, 'seed': 1234, 'subsample': 0.78}]
+mean test scores:
+
+[-1831.52328059 -4247.33768196 -4202.36276331 -4254.74158993
+ -6169.10565533]
+std test scores:
+
+[  27.38634731  148.43016877  354.09774527  486.84072816 1115.31485895]
+Best score: -1831.523
+Best parameters set: {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.001, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x000002343DA72EA0>, 'seed': 1234, 'subsample': 0.78}
+C:\Users\admin\Anaconda3\lib\site-packages\sklearn\model_selection\_search.py:761: DeprecationWarning: The grid_scores_ attribute was deprecated in version 0.18 in favor of the more elaborate cv_results_ attribute. The grid_scores_ attribute will not be available from 0.20
+  DeprecationWarning)
+Scores: [mean: -1831.52328, std: 27.38635, params: {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.001, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x000002343DA72EA0>, 'seed': 1234, 'subsample': 0.78}, mean: -4247.33768, std: 148.43017, params: {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.01, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x000002343DA72EA0>, 'seed': 1234, 'subsample': 0.78}, mean: -4202.36276, std: 354.09775, params: {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.02, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x000002343DA72EA0>, 'seed': 1234, 'subsample': 0.78}, mean: -4254.74159, std: 486.84073, params: {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.05, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x000002343DA72EA0>, 'seed': 1234, 'subsample': 0.78}, mean: -6169.10566, std: 1115.31486, params: {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.1, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x000002343DA72EA0>, 'seed': 1234, 'subsample': 0.78}]
+**********************************************
+[Finished in 1406.6s]
