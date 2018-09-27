@@ -67,16 +67,16 @@ log_mae_scorer = metrics.make_scorer(log_mae, greater_is_better = False)
 ## Type your answers here ##
 
 # Randomly shrink down the dataset 
-select_size = .01
+data_scale = .01
 df_train = pd.read_csv(
 					"./input/train.csv",
 					header = 0,
-					skiprows = lambda x:x>0 and random.random() > select_size
+					skiprows = lambda x:x>0 and random.random() > data_scale
 					)
 df_test = pd.read_csv(
 					"./input/test.csv",
 					header = 0,
-					skiprows = lambda x:x>0 and random.random() > select_size
+					skiprows = lambda x:x>0 and random.random() > data_scale
 					)
 
 train_size = df_train.shape[0]
@@ -140,7 +140,7 @@ param_grid = {'objective':[logregobj],
 
 model = search_model(train_x,
                      train_y,
-                     xgb.XGBRegressor(tree_method='gpu_hist',n_estimators=10),
+                     xgb.XGBRegressor(tree_method='gpu_hist'),
                      param_grid,
                      cv = 4,
                      refit = True)
